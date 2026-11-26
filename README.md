@@ -7,19 +7,16 @@ Cada practica contiene sus consultas en `src/`, sus bases de datos locales en `d
 ```text
 practica1/
   src/practica1.sql
-  data/
   docs/IA.docx
 practica2/
   src/practica2.sql
-  data/
   docs/IA.docx
 practica3/
   src/practica3.sql
-  data/
   docs/IA.docx
 ```
 
-Los archivos `.db` se ignoran con `.gitignore`; coloca las bases de datos proporcionadas por la asignatura en la carpeta `data/` de cada practica que las necesite.
+Las carpetas `data/` y las bases de datos se mantienen localmente y estan excluidas por `.gitignore`; no se suben al repositorio.
 
 ## Practicas
 
