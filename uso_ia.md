@@ -12,6 +12,7 @@ He utilizado Copilot como asistente durante la resolución de las prácticas SQL
 - Solicité que se extrajeran las bases de datos y se prepararan los archivos SQL.
 - Solicité posteriormente que los ejercicios se subieran a GitHub.
 - Solicité completar la Práctica 3 a partir de su presentación.
+- Solicité reorganizar las tres prácticas según una estructura `src/data/docs` y añadir el resumen de uso de IA requerido.
 
 ## Uso de las recomendaciones
 

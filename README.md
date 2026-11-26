@@ -1,44 +1,30 @@
-# Practicas Tema 4 - SQL
+# Practicas SQL - Tema 4
 
-## Contenido
+Cada practica contiene sus consultas en `src/`, sus bases de datos locales en `data/` y la documentacion de uso de IA en `docs/`.
 
-- `practica1.sql`: DDL y DML para la tabla `ParaiZooHuesped`.
-- `practica2.sql`: diez consultas sobre la tabla `movies`.
-- `practica3.sql`: consultas de ordenación, valores únicos, filtros y tratamiento de nulos.
-- `uso_ia.md`: descripción del uso de inteligencia artificial.
-- `data/bbdd/moviebig.db`: base de datos utilizada en la Practica 2.
-- `data/bbdd/world.db`: base de datos de ciudades y paises.
-- `data/bbdd/crash.db`: base de datos de accidentes de aviacion.
+## Estructura
 
-El ejercicio 3 de la Práctica 3 queda documentado como no resoluble con `moviebig.db`:
-`movies.release_date` solo contiene la fecha y no hay un campo con la hora de estreno.
-
-## Bases para SQLTools
-
-Las conexiones deben llamarse:
-
-- `moviebig`: `data/bbdd/moviebig.db`
-- `world`: `data/bbdd/world.db`
-- `crash`: `data/bbdd/crash.db`
-
-## Comprobaciones
-
-```sql
-SELECT title, release_date, vote_average
-FROM movies
-LIMIT 10;
+```text
+practica1/
+  src/practica1.sql
+  data/
+  docs/IA.docx
+practica2/
+  src/practica2.sql
+  data/
+  docs/IA.docx
+practica3/
+  src/practica3.sql
+  data/
+  docs/IA.docx
 ```
 
-```sql
-SELECT city.Name, country.Name
-FROM city
-JOIN country ON city.CountryCode = country.Code
-WHERE country.Continent = 'Europe'
-LIMIT 10;
-```
+Los archivos `.db` se ignoran con `.gitignore`; coloca las bases de datos proporcionadas por la asignatura en la carpeta `data/` de cada practica que las necesite.
 
-```sql
-SELECT datecrash, location, summary
-FROM crash
-WHERE location = 'Newark, New Jersey';
-```
+## Practicas
+
+- **Practica 1:** creacion de `ParaiZooHuesped` e insercion de los cinco animales.
+- **Practica 2:** diez consultas SQL sobre `movies`.
+- **Practica 3:** consultas sobre `movies`; el ejercicio 3 queda documentado como no resoluble con la base disponible, que no contiene la hora de estreno.
+
+La sintaxis esta adaptada a SQLite. La configuracion local de SQLTools se conserva en `.vscode/settings.json` y no se sube al repositorio.

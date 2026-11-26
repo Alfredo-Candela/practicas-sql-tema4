@@ -3,3 +3,4 @@ ppt1/
 ppt2/
 ppt-install/
 verify_practicas.py
+**/data/*.db
