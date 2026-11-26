@@ -11,6 +11,7 @@ He utilizado Copilot como asistente durante la resolución de las prácticas SQL
 - Solicité la configuración de las conexiones SQLite de `moviebig`, `world` y `crash`.
 - Solicité que se extrajeran las bases de datos y se prepararan los archivos SQL.
 - Solicité posteriormente que los ejercicios se subieran a GitHub.
+- Solicité completar la Práctica 3 a partir de su presentación.
 
 ## Uso de las recomendaciones
 
@@ -20,11 +21,12 @@ La IA fue utilizada para:
 - Diseñar la tabla `ParaiZooHuesped`.
 - Redactar los cinco bloques de inserción de la Práctica 1.
 - Traducir las consultas de los ejercicios a sintaxis SQLite.
+- Preparar y comprobar las consultas de la Práctica 3 con el esquema de `movies`.
 - Verificar los esquemas reales de las bases de datos.
 - Preparar la estructura del repositorio y el primer README.
 - Ejecutar todas las consultas para comprobar su validez.
 
-Las recomendaciones aceptadas se conservaron en los archivos `practica1.sql` y `practica2.sql`.
+Las recomendaciones aceptadas se conservaron en los archivos `practica1.sql`, `practica2.sql` y `practica3.sql`.
 
 ## Correcciones y decisiones
 
@@ -34,6 +36,7 @@ Las recomendaciones aceptadas se conservaron en los archivos `practica1.sql` y `
 - Se añadió `status IS NULL` en la consulta de películas no estrenadas para incluir estados nulos.
 - Se utilizaron `LOWER(...)` y `LIKE` para las búsquedas de texto sin distinguir mayúsculas.
 - Se excluyeron los valores `runtime = 0` en el ejercicio 10.
+- El ejercicio 3 de la Práctica 3 no se puede resolver con `moviebig.db`: `release_date` no almacena la hora.
 - Se verificaron los resultados reales mediante Python y SQLite.
 
 ## Problemas detectados
